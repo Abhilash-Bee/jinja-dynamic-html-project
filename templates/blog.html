@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog data</title>
+</head>
+<body>
+  {% for each_data in data: %}
+    {% if each_data["id"] == 2: %}
+        <h1>{{ each_data["title"] }}</h1>
+        <h2>{{ each_data["subtitle"] }}</h2>
+    {% endif %}
+  {% endfor %}
+</body>
+</html>
